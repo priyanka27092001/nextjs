@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<>, initial-scale=1.0">
+  <title>Home-Arts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&family=Nunito+Sans:ital,wght@1,200&display=swap"
+    rel="stylesheet">
+  <link rel="Icon" href="favicon.ico?v=2">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    nav ul li a:hover {
+      background-color: grey;
+    }
+
+    .hero {
+      overflow-x: hidden;
+
+    }
+
+    body {
+      background-color: #E8E8E8;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1067px;
+      margin: auto;
+
+      padding: 0 16px;
+    }
+
+    .holder {
+
+      padding: 20px;
+      margin: 40px;
+      background-color: white;
+      border-radius: 20px;
+
+      top: 20%;
+      left: 47.5%;
+      transform: translate(-50%, -50%);
+
+      margin-top: 150%;
+      height: fit-content;
+      position: relative;
+
+      /* Additional style for demonstration purposes */
+      transition: transform 0.3s ease-out;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container nav .dropdown {
+      display: inline-block;
+
+      overflow: hidden;
+    }
+
+    .container nav .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .container nav .navbar a:hover,
+    .container nav .dropdown:hover .container nav .dropbtn,
+    .container nav .dropbtn:focus {
+      background-color: grey;
+    }
+
+    .container nav .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .container nav .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .container nav .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .container nav .show {
+      display: block;
+    }
+
+    header {
+      background-image: url('img_girl.jpg');
+
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+      height: 80px;
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+
+    }
+
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+
+    }
+
+    header .logo {
+      margin-left: 20px;
+      display: inline-block;
+      font-size: 27px;
+
+    }
+
+    header .logo a {
+      float: left;
+      text-decoration: none;
+      color: white;
+
+    }
+
+    header .container nav {
+
+      display: inline-block;
+
+
+    }
+
+    header .container nav ul li {
+      display: inline-block;
+      font-size: 15px;
+      letter-spacing: 0.37px;
+      margin-right: 24px;
+      text-decoration: none;
+
+
+
+    }
+
+    header .container nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 20px;
+
+    }
+
+    header .container nav ul li.menu-icon img {
+      vertical-align: middle;
+      width: 20px;
+      height: 40px;
+    }
+
+    header .container nav ul li.menu-icon {
+      display: none;
+    }
+
+    header .container nav ul li:last-of-type a {
+
+      margin-right: 0;
+
+
+    }
+
+    section.artists .product-slider .container .product-new .button {
+
+      background-color: purple;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+
+    section.artists .product-slider .container .product-new .button1 {
+      border-radius: 2px;
+    }
+
+    section.artists .product-slider .container .product-new .button2 {
+      border-radius: 4px;
+    }
+
+    section.artists .product-slider .container .product-new .button3 {
+      border-radius: 8px;
+    }
+
+    section.artists .product-slider .container .product-new .button4 {
+      border-radius: 12px;
+    }
+
+    section.artists .product-slider .container .product-new .button5 {
+      border-radius: 50%;
+    }
+
+
+
+    section.artists .product-slider .container .product-new .button11 {
+      font-size: 10px;
+    }
+
+    section.artists .product-slider .container .product-new .button21 {
+      font-size: 12px;
+    }
+
+    section.artists .product-slider .container .product-new .button31 {
+      font-size: 32px;
+    }
+
+    section.artists .product-slider .container .product-new .buttona {
+
+
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    section.artists .product-slider .container .inputs input[type=text] {
+      width: 30%;
+      padding: 12px 20px;
+      margin: 0;
+
+      display: inline-block;
+      border: none;
+      border-bottom: 2px solid grey;
+    }
+
+    section.artists .product-slider .container .inputs #fname {
+      padding: 5px;
+    }
+
+    /*toggle switches*/
+    section.artists .product-slider .container .one .toggle .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+    }
+
+    section.artists .product-slider .container .one .toggle .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    section.artists .product-slider .container .one .toggle .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    section.artists .product-slider .container .one .toggle .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    section.artists .product-slider .container .one .toggle input:checked+.slider {
+      background-color: #2196F3;
+    }
+
+    section.artists .product-slider .container .one .toggle input:focus+.slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    section.artists .product-slider .container .one .toggle input:checked+.slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    section.artists .product-slider .container .one .toggle .slider.round {
+      border-radius: 34px;
+    }
+
+    section.artists .product-slider .container .one .toggle .slider.round:before {
+      border-radius: 50%;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <header id="navbar">
+    <div class="parallax-image" id="parallax-image"></div>
+    <div class="container">
+      <section class="logo">
+        <a href="index.html">
+          <strong>NEXTJS</strong>
+
+          <span>Ion</span></a>
+      </section>
+      <nav >
+      
+  
+        <ul>
+          <li style="padding-left:100px"><a href="about.html">COMPONENTS</a></li>
+          <li><a
+              href="https://www.elizabethmossgalleries.com/exhibitions/?gclid=Cj0KCQjw8NilBhDOARIsAHzpbLAvY6LiDLhdyKLgYCxwkHZcmsvg0uSJzfNdrfZ17PhxO9QQnHCuWw8aAnWNEALw_wcB">UPGRADE
+              TO PRO </a></li>
+          <li><a href="C:\Users\hp\Desktop\assignmentweb\artworks.html">DOWNLOAD</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li class="menu-icon"><img src="C:\Users\hp\Desktop\assignmentweb\images\menu.png"></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <img src="/images/hero1.png" alt="hero img1 art">
+
+  </section>
+  
+    <div class="holder">
+      <section class="artists" id="artists-section">
+        <h1>Basic Elements</h1>
+        <hr>
+        <h2>Buttons</h2>
+
+
+
+        <div class="product-slider">
+          <div class="container">
+            <div class="product-new">
+
+              <h3>Pick your style</h3>
+              <button class="button button1">2px</button>
+              <button class="button button2">4px</button>
+              <button class="button button3">8px</button>
+              <button class="button button4">12px</button>
+              <button class="button button5">50%</button>
+
+              </br></br>
+
+
+
+              <h3>Pick your size</h3>
+              <button class="button button11">10px</button>
+              <button class="button button21">12px</button>
+              <button class="button button31">16px</button>
+              </br></br>
+
+
+
+              <h3>Pick your color</h3>
+              <button class="button buttona" style="background-color: grey;">DEFAULT</button>
+              <button class="button buttona" style="background-color: purple;">ROUND</button>
+              <button class="button buttona" style="background-color: violet;">WITH ICON</button>
+              <button class="button buttona" style="background-color: green;">DEFAULT</button>
+              <button class="button buttona" style="background-color: red;">SIMPLE</button>
+
+
+
+            </div>
+
+            <div class="inputs">
+              <h2>Inputs</h2>
+              <form>
+
+                <input type="text" id="fname" name="fname" placeholder="Regular">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="fname" name="fname"
+                  placeholder="With floating label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="fname" name="fname" placeholder="Success input">
+
+
+              </form>
+
+
+
+            </div>
+            <div class="one">
+              <div class="checkbox">
+                <h2>Checkboxes</h2>
+                <label class="container">One
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Two
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Three
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Four
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+              </div>
+
+              <div class="radio">
+                <h2>Radio Buttons</h2>
+                <label class="container">One
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Two
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Three
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Four
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+
+
+              </div>
+
+              <div class="toggle">
+                <h2>Toggle Buttons</h2>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label><br><br>
+
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+
+              </div>
+            </div>
+
+
+            <div class="progress-bars">
+            <h1>Progress Bars</h1>
+            <div class="progress"> <!-- Replace 'progress-bar' with 'progress' -->
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                style="width: 50%; background-color: #4caf50;"></div>
+            </div>
+            <div class="progress"> <!-- Replace 'progress-bar' with 'progress' -->
+              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                style="width: 30%; background-color: #2196f3;"></div>
+            </div>
+            <div class="progress"> <!-- Replace 'progress-bar' with 'progress' -->
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width: 70%; background-color: #ff9800;"></div>
+            </div>
+          </div>
+
+            <div class="product ">
+              <h2>Pagination</h2>
+
+            </div>
+
+            <div class="slide">
+              <h2>Sliders</h2>
+              <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <p>Value: <span id="demo"></span></p>
+              </div>
+
+            </div>
+
+            <div class="product ">
+              <h2>Badges</h2>
+
+            </div>
+
+            <div class="product ">
+              <h2>Menu</h2>
+
+            </div>
+
+            <div class="navbar">
+              <a href="#home">Home</a>
+              <a href="#news">News</a>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Dropdown
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            </div>
+            <h2>Notifications</h2>
+            <div class="notificaton">
+
+              <div class="alert alert-success">
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+              </div>
+              <div class="alert alert-info">
+                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+              </div>
+              <div class="alert alert-warning">
+                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+              </div>
+              <div class="alert alert-danger">
+                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+              </div>
+
+            </div>
+            </br></br>
+            <h2>Typography</h2>
+
+            <div class="typo">
+
+              <table>
+
+                <tr>
+                  <td class="t1">Header1</td>
+                  <td>
+                    <h1>The Life of a material Kit</h1>
+                  </td>
+
+
+                </tr>
+                <tr>
+                  <td class="t1">Header2</td>
+                  <td>
+                    <h2>The Life of a material Kit</h1>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td class="t1">Header3</td>
+                  <td>
+                    <h3>The Life of a material Kit</h1>
+                  </td>
+
+
+                </tr>
+                <tr>
+                  <td class="t1">Header4</td>
+                  <td>
+                    <h4>The Life of a material Kit</h1>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td class="t1">Header5</td>
+                  <td>
+                    <h5>The Life of a material Kit</h1>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td class="t1">Header6</td>
+                  <td>
+                    <h6>The Life of a material Kit</h1>
+                  </td>
+
+                </tr>
+
+
+
+              </table>
+
+
+
+            </div>
+            <h2>Images</h2></br></br>
+            <div class="image">
+
+
+
+              <img src="/images/img_lights.jpg" class="w3-round-small" alt="Norway"
+                style="width:20% ; border-radius:100%;height:10%; " >
+
+              <img src="/images/img_lights.jpg" class="w3-round" alt="Norway"
+                style="width:20%;height:10%; border-radius: 51px;" >
+
+
+              <img src="/images/img_lights.jpg" class="w3-round-large" alt="Norway"
+                style="width:20%;height:10%;border-radius: 10px;" >
+
+              <img src="/images/img_lights.jpg" class="w3-round-xlarge" alt="Norway"
+                style="width:20%;height:10%;">
+
+
+            </div>
+            <h1>Carousel</h1>
+
+            <div class="carousel" style="margin-left:12%">
+              <br>
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" style="padding:0;width:80%">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox" >
+
+                  <div class="item active">
+                    <img src="images\img_chania.jpg" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3>Chania</h3>
+                      <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                  </div>
+
+
+
+                  <div class="item">
+                    <img src="images\img_flower.jpg" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3>Flowers</h3>
+                      <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img src="images\img_flower2.jpg" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                      <h3>Flowers</h3>
+                      <p>Beautiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="text1">
+              <h1>Do you love this UI Kit?</h1>
+              <p> Cause if you do, it can be yours for FREE. Hit the buttons below to navigate to our
+
+                website where you can find the kit. We also have the Bootstrap 4 version on plain HTML.
+                Start a new project or give an old Bootstrap project a new look!</p>
+              <button>FREE NEXTJS DOWNLOAD</button> <button>FREE REACT DOWNLOAD</button>
+
+            </div>
+
+            <div class="text2">
+              <h1>Want more ?</h1>
+              <p> We've just launched NextJS Material Kit PRO .It has a huge number of components, sections and example
+                pages.
+                Start Your Development With A Badass Material-UI and NexJS Kit inspired by Material Design.</p>
+              <button>FREE NEXTJS DOWNLOAD</button> <button>FREE REACT DOWNLOAD</button>
+
+            </div>
+
+            <div class="thankyou">
+              <h1>Thankyou for Supporting us!</h1>
+              <button>TWEET</button> <button>SHARE</button> <button>STAR</button>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer style="position: relative;margin-top: -155%;">
+      <div class="bottom-nav">
+        <div class="container">
+          <ul>
+            <li class="list-title">Creative Team</li>
+
+
+          </ul>
+          <ul>
+            <li class="list-title">About Us</li>
+
+
+          </ul>
+          <ul>
+            <li class="list-title">Social Media</li>
+
+
+          </ul>
+          <ul>
+            <li class="list-title">Licenses</li>
+
+
+          </ul>
+        </div>
+
+
+
+      </div>
+      <div class="copyright-text">2023 @ All Rights Reserved</div>
+
+    </footer>
+
+ 
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
+  
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
